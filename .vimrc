@@ -47,13 +47,14 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'artanikin/vim-synthwave84'
 Plug 'relastle/bluewery.vim'
 Plug 'dense-analysis/ale'
+Plug 'whatyouhide/vim-gotham'
+Plug 'itchyny/lightline.vim'
 "Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 "colorscheme gotham
 "colorscheme codedark 
 "colorscheme synthwave84
-
-" For dark
 colorscheme bluewery
+
 let g:lightline = { 'colorscheme': 'bluewery' }
