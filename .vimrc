@@ -9,7 +9,7 @@ inoremap jj <Esc>
 set number
 set ruler		" show the cursor position all the time
 set colorcolumn=80
-set cursorline
+"set cursorline
 
 set incsearch
 
@@ -39,6 +39,7 @@ au BufNewFile,BufRead *.vert\|*.frag\|*.glsl set filetype=glsl
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+
 set lines=66 columns=166
 
 call plug#begin('~/.vim/plugged')
@@ -52,9 +53,14 @@ Plug 'itchyny/lightline.vim'
 "Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
+augroup MyColorSchemeOverrides
+    autocmd!
+    autocmd ColorScheme * highlight Normal ctermbg=Black
+augroup END
+
 "colorscheme gotham
 "colorscheme codedark 
-"colorscheme synthwave84
-colorscheme bluewery
+colorscheme synthwave84
+"colorscheme bluewery
 
-let g:lightline = { 'colorscheme': 'bluewery' }
+"let g:lightline = { 'colorscheme': 'bluewery' }
