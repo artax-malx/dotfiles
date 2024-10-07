@@ -1,3 +1,2 @@
-echo ">>> Cast in the name of God Ye not Guilty"
-# disable /etc/motd
+echo "<YOUR_TERMINAL_WELCOME_MESSAGE_HERE>"
 touch ~/.hushlogin
